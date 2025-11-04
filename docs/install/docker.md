@@ -47,10 +47,9 @@ For spinning up the Docker Compose stack using reverse proxies and your own doma
     - `APP_URL=https://invoiceshelf.acme.com:8080`
 
 #### SESSION_DOMAIN  
- The domain used for session cookies <br/>
+ The domain used for session cookies. Include port if using non-standard ports <br/>
 - **With leading dot (.)**: Allows cookies across all subdomains (e.g., `.acme.com`)
 - **Without dot**: Restricts cookies to specific domain only (e.g., `invoiceshelf.acme.com`)
-- **Note**: Include port if using non-standard ports
 - **Format**: `.<yourdomain>.<tld>` (note the leading dot for subdomain support)
 - **Examples**:
   - `SESSION_DOMAIN=.acme.com` (with dot for subdomain support)
